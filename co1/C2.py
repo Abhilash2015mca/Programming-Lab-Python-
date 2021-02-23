@@ -9,11 +9,11 @@ else:
     print("Leap year are :")
     input_year = input_year + 1
     for x in range(current_year, input_year):
-         if  abs(x) % 100 == 00:
+         if  x % 100 == 00:
              if x % 400 == 0 :
                  print(x) 
          else:
               if x % 4 == 0:
                  print(x) 
-                              
+print(x%100)                            
                               
