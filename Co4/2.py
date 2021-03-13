@@ -6,12 +6,13 @@ class bankAccount:
         self.accountNo = accountNo
         self.Accounttype = Accounttype
         self.balance = balance
-    def deposit(self,a)
+    def deposit(self,a):
         self.balance = self.balance + a
-        return balance
+        return self.balance
     def withdraw(self,b):
-        self.balance = self.balance + b
-        return balance
-name = int(input("enter the name")
-      
+        self.balance = self.balance - b
+        return self.balance
+abhi = bankAccount("rony",123456,"AC",15000)  
+print(abhi.deposit(1000))
+print(abhi.withdraw(500))
 
