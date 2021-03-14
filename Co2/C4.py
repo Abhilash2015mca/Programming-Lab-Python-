@@ -1,12 +1,12 @@
 #Generate a list of four digit numbers in a given range with all their digits even and the 
  #number is a perfect square
-import math
-b=int(input("Enter range from:"))
-c=int(input("Enter range to:"))
-a=[]
-if b>999 & c<10000:
-    for x in range(b,c+1):
-        if x%2==0 and math.isqrt(x) ** 2 == x:
-            a.append(x)
-print(a)
-
+lst=[] 
+x = int(input("enter a four digit number = "))
+y = int(input("enter a four digit number = "))
+for i in range(x,y):
+   for j in range(32,100):
+       if i == j*j:
+           string = str(i)
+           if int(string[0])%2 == 0 and int(string[1])%2 == 0 and int(string[2])%2 == 0 and int(string[3])%2 == 0:
+               lst.append(i)
+print(lst)               
