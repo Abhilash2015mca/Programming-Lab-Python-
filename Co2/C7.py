@@ -1,7 +1,12 @@
 #Add ‘ing’ at the end of a given string. If it already ends with ‘ing’, then add ‘ly’
-string=input("Enter the string = ")
-print("The output string is given below")
-if string[-3:]=="ing":
-    print(string+"ly")
-else:
-    print(string+"ing")
+def add_str(str1):
+    length=len(str1)
+
+    if length>2:
+        if str1[-3:]=='ing':
+            str1+='ly'
+        else:
+            str1+='ing'
+    return str1
+print(add_str('paint'))
+print(add_str('playing'))
