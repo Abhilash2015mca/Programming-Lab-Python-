@@ -1,10 +1,9 @@
 #Generate all factors of a number
-def print_factors(x):
-   print("The factors of",x,"are:")
-   for i in range(1, x + 1):
-       if x % i == 0:
-           print(i)
-
-num=int(input("Enter the number: "))
-
-print_factors(num)
+list=[]
+number=int(input("Enter the number = "))
+for i in range(1,int((number/2)+1)):
+    if number%i==0:
+        list.append(i)
+list.append(number)        
+print("The list of factors of the number "+str(number))
+print(list)

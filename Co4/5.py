@@ -33,5 +33,5 @@ class Python(Book):
         print("Price: ",self.price)
         print("Number of pages: ", self.no_of_pages)
            
-s1=Python("ak books","Taming Python By Programming  ",' Jeeva Jose  ' ,200,219)
+s1=Python("Pengiun Books","3 Mistakes of my Life",' Chettan Bhagat' ,200,219)
 s1.display()

@@ -6,5 +6,5 @@ def change_char(str1):
   str1 = char + str1[1:]
 
   return str1
-
-print(change_char('little')) 
+a = str(input("Enter the String = "))
+print(change_char(a)) 
