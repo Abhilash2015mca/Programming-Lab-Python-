@@ -22,3 +22,19 @@ with open('names.csv', 'r') as file:
     reader = csv.reader(file)
     for row in reader:
         print(row[0]+" "+row[1]+" "+row[2])
+
+import csv
+csv_columns=['no','name','place']
+dict_data=[
+    {'no':1,'name':2,'place':'ran'}
+]        
+f=open("names.csv",'w')
+r=csv.DictWriter(f,fieldnames=csv_columns)
+r.writeheader()
+for data in dict_data:
+    r.writerow(data)
+f.close()
+f=open("names.csv",'r')
+r=csv.reader(f)
+for row in r:
+    print(row)    
